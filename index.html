@@ -46,15 +46,21 @@
     .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.principle{border:1px solid var(--line);border-radius:19px;padding:25px;background:rgba(255,255,255,.018)}.principle span{font-size:.75rem;color:var(--accent);font-weight:800}.principle h3{font-size:1.18rem;margin:14px 0 10px}.principle p{color:var(--muted);line-height:1.7;margin:0}
     .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.skill h3{font-size:.95rem;margin:0 0 14px}.skill-list{display:flex;flex-wrap:wrap;gap:7px}.skill-list span{border:1px solid var(--line);border-radius:999px;padding:7px 9px;font-size:.76rem;color:#bdcbd6}
     .credentials{display:grid;grid-template-columns:1fr 1fr;gap:18px}.credential-main,.credential-side{border:1px solid var(--line);border-radius:20px;padding:28px;background:var(--surface)}.credential-main h3,.credential-side h3{font-size:1.35rem;margin:8px 0 9px;letter-spacing:-.03em}.credential-main p,.credential-side p{color:var(--muted);line-height:1.65;margin-bottom:0}.cert-mark{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:rgba(102,199,244,.08);color:var(--accent);border:1px solid rgba(102,199,244,.2);font-weight:900}
+    .product-card{display:grid;grid-template-columns:.82fr 1.18fr;gap:34px;border:1px solid var(--line);border-radius:24px;padding:32px;background:linear-gradient(145deg,rgba(102,199,244,.06),rgba(255,255,255,.018));overflow:hidden}
+    .product-visual{min-height:320px;border:1px solid var(--line);border-radius:19px;background:radial-gradient(circle at 70% 20%,rgba(102,199,244,.18),transparent 34%),linear-gradient(155deg,#101e2a,#0b131c);display:flex;flex-direction:column;justify-content:space-between;padding:26px;position:relative;overflow:hidden}
+    .product-visual:after{content:"";position:absolute;inset:auto -60px -80px auto;width:240px;height:240px;border:1px solid rgba(102,199,244,.16);border-radius:50%;box-shadow:0 0 0 34px rgba(102,199,244,.025),0 0 0 68px rgba(102,199,244,.018)}
+    .product-badge{display:inline-flex;align-items:center;gap:8px;width:max-content;border:1px solid rgba(167,243,208,.24);border-radius:999px;padding:8px 11px;color:#d7f7e7;background:rgba(167,243,208,.06);font-size:.77rem;font-weight:800}.product-badge .dot{width:7px;height:7px;box-shadow:none}
+    .product-wordmark{position:relative;z-index:1}.product-wordmark strong{display:block;font-size:clamp(3.3rem,8vw,6.4rem);line-height:.85;letter-spacing:-.075em}.product-wordmark span{display:block;margin-top:12px;color:var(--muted);font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;font-weight:750}
+    .product-copy h3{font-size:2rem;letter-spacing:-.045em;margin:8px 0 14px}.product-copy p{color:var(--muted);line-height:1.75}.product-points{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin:22px 0}.product-point{border:1px solid var(--line);border-radius:14px;padding:14px;background:rgba(255,255,255,.018)}.product-point strong{display:block;font-size:.83rem;margin-bottom:5px}.product-point span{display:block;color:var(--muted);font-size:.8rem;line-height:1.5}
     .connect{padding:110px 0}.connect h2{font-size:clamp(2.3rem,5vw,5rem);letter-spacing:-.06em;line-height:.96;max-width:950px;margin:12px 0 20px}.connect p{color:var(--muted);max-width:720px;line-height:1.7}.footer{display:flex;justify-content:space-between;padding:25px 0 40px;border-top:1px solid var(--line);color:var(--muted2);font-size:.8rem}
-    @media(max-width:900px){.hero{grid-template-columns:1fr;gap:42px}.profile-card{max-width:470px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.highlight{grid-template-columns:1fr}.principles{grid-template-columns:1fr}.credentials{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr 1fr}.case-grid{grid-template-columns:1fr}.section-head{display:block}.section-head>p{margin-top:18px}}
-    @media(max-width:620px){.shell{width:min(calc(100% - 26px),var(--max))}.navlinks{display:none}.hero{padding:64px 0}.hero h1{font-size:clamp(3.1rem,16vw,4.8rem)}.stats,.skill-grid{grid-template-columns:1fr}.stat{border-right:0!important;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.section{padding:78px 0}.highlight{padding:23px}.footer{flex-direction:column;gap:6px}}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;gap:42px}.product-card{grid-template-columns:1fr}.product-visual{min-height:270px}.profile-card{max-width:470px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.highlight{grid-template-columns:1fr}.principles{grid-template-columns:1fr}.credentials{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr 1fr}.case-grid{grid-template-columns:1fr}.section-head{display:block}.section-head>p{margin-top:18px}}
+    @media(max-width:620px){.shell{width:min(calc(100% - 26px),var(--max))}.product-card{padding:22px}.product-points{grid-template-columns:1fr}.navlinks{display:none}.hero{padding:64px 0}.hero h1{font-size:clamp(3.1rem,16vw,4.8rem)}.stats,.skill-grid{grid-template-columns:1fr}.stat{border-right:0!important;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.section{padding:78px 0}.highlight{padding:23px}.footer{flex-direction:column;gap:6px}}
   </style>
 </head>
 <body>
   <nav class="nav shell">
     <a class="brand" href="#top">Jonathan <span>Zarate</span></a>
-    <div class="navlinks"><a href="#highlights">Career</a><a href="#principles">Approach</a><a href="#technology">Technology</a><a href="#credentials">Credentials</a><a href="#connect">Connect</a></div>
+    <div class="navlinks"><a href="#highlights">Career</a><a href="#product">Product</a><a href="#principles">Approach</a><a href="#technology">Technology</a><a href="#credentials">Credentials</a><a href="#connect">Connect</a></div>
   </nav>
 
   <main>
@@ -151,6 +157,34 @@
       </article>
     </section>
 
+    <section id="product" class="section shell">
+      <div class="section-head">
+        <div><p class="section-label">Selected product</p><h2>From developer pain point to public beta.</h2></div>
+        <p>Outside enterprise delivery, I build products that solve problems I can test directly with users. Onion is a public example of that product-engineering loop.</p>
+      </div>
+      <article class="product-card">
+        <div class="product-visual" aria-label="Onion product card">
+          <div class="product-badge"><span class="dot"></span> Public Windows Beta</div>
+          <div class="product-wordmark"><strong>Onion</strong><span>Visual version control for game assets</span></div>
+        </div>
+        <div class="product-copy">
+          <p class="eyebrow">Personal Product · Electron / React / TypeScript</p>
+          <h3>Making visual game-asset changes easier to review.</h3>
+          <p><strong>Problem:</strong> Git is excellent for source code, but visual changes to game assets are difficult to understand through ordinary text and binary diffs.</p>
+          <p><strong>Solution:</strong> Built a desktop developer tool for GameMaker projects that compares current sprite work against Git history visually, including sprite differences, collision-mask changes, and origin-point inspection.</p>
+          <div class="product-points">
+            <div class="product-point"><strong>Product ownership</strong><span>Identified the problem, designed the workflow, built the application, and published a usable beta.</span></div>
+            <div class="product-point"><strong>Public proof</strong><span>The Windows beta is published on itch.io and the source is available through GitHub.</span></div>
+          </div>
+          <div class="actions">
+            <a class="btn primary" href="https://jvmzdev.itch.io/onion-beta" target="_blank" rel="noreferrer">View Onion on itch.io ↗</a>
+            <a class="btn" href="https://github.com/jvmzdev/onion" target="_blank" rel="noreferrer">View source on GitHub ↗</a>
+          </div>
+          <div class="chips"><span class="chip">Electron</span><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">Git</span><span class="chip">GameMaker</span><span class="chip">Desktop App</span><span class="chip">Product Engineering</span></div>
+        </div>
+      </article>
+    </section>
+
     <section id="principles" class="section shell">
       <div class="section-head"><div><p class="section-label">How I work</p><h2>Engineering judgment beyond the ticket.</h2></div><p>I’m most effective where technical delivery, product context, and team enablement overlap.</p></div>
       <div class="principles">
@@ -163,7 +197,7 @@
     <section id="technology" class="section shell">
       <div class="section-head"><div><p class="section-label">Technology</p><h2>Modern product engineering with enterprise depth.</h2></div><p>The tools change by problem. The through-line is building maintainable systems, reliable integrations, and repeatable delivery.</p></div>
       <div class="skill-grid">
-        <div class="skill"><h3>Product & Frontend</h3><div class="skill-list"><span>React</span><span>React Native</span><span>TypeScript</span><span>JavaScript</span><span>Angular</span><span>Vue.js</span><span>HTML / CSS</span></div></div>
+        <div class="skill"><h3>Product & Frontend</h3><div class="skill-list"><span>React</span><span>React Native</span><span>Electron</span><span>TypeScript</span><span>JavaScript</span><span>Angular</span><span>Vue.js</span><span>Desktop Apps</span><span>HTML / CSS</span></div></div>
         <div class="skill"><h3>Backend & Integration</h3><div class="skill-list"><span>.NET / C#</span><span>Java</span><span>REST APIs</span><span>OAuth 2.0</span><span>SQL Server</span><span>MySQL</span><span>IBM WebSphere</span></div></div>
         <div class="skill"><h3>Enterprise Platforms</h3><div class="skill-list"><span>Liferay DXP</span><span>OSGi</span><span>Spring MVC</span><span>Tomcat</span><span>Enterprise CMS</span><span>Portal Architecture</span></div></div>
         <div class="skill"><h3>Cloud & Delivery</h3><div class="skill-list"><span>Azure</span><span>GitHub Actions</span><span>Azure DevOps</span><span>Jenkins</span><span>Docker</span><span>CI/CD</span><span>Git</span><span>Gradle / Maven</span></div></div>
