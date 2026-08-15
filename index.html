@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Jonathan Zarate — Senior Software Engineer focused on enterprise platforms, product engineering, Liferay DXP, React, TypeScript, .NET, Java and technical leadership." />
+  <meta name="description" content="Jonathan Zarate — Senior Software Engineer focused on enterprise platforms, product engineering, integrations, cloud delivery and technical leadership." />
   <meta name="theme-color" content="#0b1118" />
   <meta property="og:title" content="Jonathan Zarate | Senior Software Engineer" />
   <meta property="og:description" content="Enterprise Platforms • Product Engineering • Technical Leadership" />
@@ -11,6 +11,7 @@
   <meta property="og:url" content="https://jvmzdev.github.io/" />
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://jvmzdev.github.io/" />
   <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
   <title>Jonathan Zarate | Senior Software Engineer</title>
   <style>
@@ -36,23 +37,24 @@
     .photo-wrap{aspect-ratio:4/4.3;border-radius:19px;overflow:hidden;background:linear-gradient(135deg,#0f1c28,#122c3c);position:relative;border:1px solid rgba(255,255,255,.05)}
     .photo-wrap img{width:100%;height:100%;object-fit:cover;display:block}.photo-fallback{height:100%;display:grid;place-items:center;font-size:4rem;font-weight:900;letter-spacing:-.06em;color:var(--accent);background:radial-gradient(circle at 50% 35%,rgba(102,199,244,.14),transparent 50%)}
     .profile-meta{padding:18px 3px 3px}.profile-meta h2{margin:0 0 4px;font-size:1.35rem}.profile-meta p{margin:0;color:var(--muted);line-height:1.55}.status{display:inline-flex;align-items:center;gap:8px;margin-top:15px;color:#cfe7d9;font-size:.85rem}.dot{width:8px;height:8px;border-radius:999px;background:var(--accent2);box-shadow:0 0 0 5px rgba(167,243,208,.08)}
-    .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stat{padding:32px 22px;border-right:1px solid var(--line)}.stat:last-child{border-right:0}.stat strong{display:block;font-size:2.4rem;letter-spacing:-.055em}.stat span{display:block;color:var(--muted);font-size:.86rem;line-height:1.45;margin-top:7px}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stat{padding:32px 22px;border-right:1px solid var(--line)}.stat:last-child{border-right:0}.stat strong{display:block;font-size:2.4rem;letter-spacing:-.055em}.stat span{display:block;color:var(--muted);font-size:.86rem;line-height:1.45;margin-top:7px}.stat a{border-bottom:1px solid rgba(102,199,244,.35)}.stat a:hover{color:var(--accent)}
     .section{padding:104px 0;border-bottom:1px solid var(--line)}.section h2{font-size:clamp(2rem,4vw,3.7rem);letter-spacing:-.05em;line-height:1.03;margin:11px 0 0}.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:42px}.section-head>p{max-width:470px;color:var(--muted);line-height:1.7;margin:0}
     .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}.tab{border:1px solid var(--line);background:transparent;color:var(--muted);padding:10px 14px;border-radius:999px;cursor:pointer;font-weight:750;font-size:.86rem}.tab.active{background:var(--text);color:#071019;border-color:var(--text)}
-    .highlight{display:none;grid-template-columns:.68fr 1.32fr;gap:46px;border:1px solid var(--line);border-radius:22px;padding:32px;background:var(--surface)}.highlight.active{display:grid}.highlight h3{font-size:1.65rem;letter-spacing:-.04em;margin:7px 0 8px}.role-meta{color:var(--muted2);font-size:.9rem}.highlight-copy{color:var(--muted);line-height:1.75;margin-top:0}.impact{border-left:2px solid var(--accent);padding-left:14px;color:#dbe7ef;line-height:1.6;font-weight:650}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.chip{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:.76rem;color:#c2d0db;background:rgba(255,255,255,.025)}
+    .highlight{display:none;grid-template-columns:.67fr 1.33fr;gap:46px;border:1px solid var(--line);border-radius:22px;padding:32px;background:var(--surface)}.highlight.active{display:grid}.highlight h3{font-size:1.65rem;letter-spacing:-.04em;margin:7px 0 8px}.role-meta{color:var(--muted2);font-size:.9rem}.highlight-copy{color:var(--muted);line-height:1.75;margin-top:0}.impact{border-left:2px solid var(--accent);padding-left:14px;color:#dbe7ef;line-height:1.6;font-weight:650;margin-top:18px}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.chip{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:.76rem;color:#c2d0db;background:rgba(255,255,255,.025)}
+    .case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.case{border:1px solid var(--line);border-radius:14px;padding:13px;background:rgba(255,255,255,.018)}.case strong{display:block;font-size:.84rem;margin-bottom:4px}.case span{color:var(--muted);font-size:.78rem;line-height:1.5}
+    .ext{color:#d9edf8;border-bottom:1px solid rgba(102,199,244,.32)}.ext:hover{color:var(--accent);border-bottom-color:var(--accent)}
     .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.principle{border:1px solid var(--line);border-radius:19px;padding:25px;background:rgba(255,255,255,.018)}.principle span{font-size:.75rem;color:var(--accent);font-weight:800}.principle h3{font-size:1.18rem;margin:14px 0 10px}.principle p{color:var(--muted);line-height:1.7;margin:0}
-    .credentials{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}.credential-main,.credential-side{border:1px solid var(--line);border-radius:20px;padding:28px;background:var(--surface)}.credential-main h3{font-size:1.5rem;margin:8px 0 9px;letter-spacing:-.03em}.credential-main p,.credential-side p{color:var(--muted);line-height:1.65}.cert-mark{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:rgba(102,199,244,.08);color:var(--accent);border:1px solid rgba(102,199,244,.2);font-weight:900}
     .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.skill h3{font-size:.95rem;margin:0 0 14px}.skill-list{display:flex;flex-wrap:wrap;gap:7px}.skill-list span{border:1px solid var(--line);border-radius:999px;padding:7px 9px;font-size:.76rem;color:#bdcbd6}
+    .credentials{display:grid;grid-template-columns:1fr 1fr;gap:18px}.credential-main,.credential-side{border:1px solid var(--line);border-radius:20px;padding:28px;background:var(--surface)}.credential-main h3,.credential-side h3{font-size:1.35rem;margin:8px 0 9px;letter-spacing:-.03em}.credential-main p,.credential-side p{color:var(--muted);line-height:1.65;margin-bottom:0}.cert-mark{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:rgba(102,199,244,.08);color:var(--accent);border:1px solid rgba(102,199,244,.2);font-weight:900}
     .connect{padding:110px 0}.connect h2{font-size:clamp(2.3rem,5vw,5rem);letter-spacing:-.06em;line-height:.96;max-width:950px;margin:12px 0 20px}.connect p{color:var(--muted);max-width:720px;line-height:1.7}.footer{display:flex;justify-content:space-between;padding:25px 0 40px;border-top:1px solid var(--line);color:var(--muted2);font-size:.8rem}
-    .photo-note{font-size:.75rem!important;color:#75899a!important;margin-top:8px!important}
-    @media(max-width:900px){.hero{grid-template-columns:1fr;gap:42px}.profile-card{max-width:470px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.highlight{grid-template-columns:1fr}.principles{grid-template-columns:1fr}.credentials{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head>p{margin-top:18px}}
+    @media(max-width:900px){.hero{grid-template-columns:1fr;gap:42px}.profile-card{max-width:470px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(2){border-right:0}.stat:nth-child(-n+2){border-bottom:1px solid var(--line)}.highlight{grid-template-columns:1fr}.principles{grid-template-columns:1fr}.credentials{grid-template-columns:1fr}.skill-grid{grid-template-columns:1fr 1fr}.case-grid{grid-template-columns:1fr}.section-head{display:block}.section-head>p{margin-top:18px}}
     @media(max-width:620px){.shell{width:min(calc(100% - 26px),var(--max))}.navlinks{display:none}.hero{padding:64px 0}.hero h1{font-size:clamp(3.1rem,16vw,4.8rem)}.stats,.skill-grid{grid-template-columns:1fr}.stat{border-right:0!important;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.section{padding:78px 0}.highlight{padding:23px}.footer{flex-direction:column;gap:6px}}
   </style>
 </head>
 <body>
   <nav class="nav shell">
     <a class="brand" href="#top">Jonathan <span>Zarate</span></a>
-    <div class="navlinks"><a href="#highlights">Career</a><a href="#principles">Approach</a><a href="#credentials">Credentials</a><a href="#technology">Technology</a><a href="#connect">Connect</a></div>
+    <div class="navlinks"><a href="#highlights">Career</a><a href="#principles">Approach</a><a href="#technology">Technology</a><a href="#credentials">Credentials</a><a href="#connect">Connect</a></div>
   </nav>
 
   <main>
@@ -61,7 +63,7 @@
         <p class="eyebrow">Senior Software Engineer</p>
         <h1>Jonathan Zarate<span>Builds enterprise software that ships.</span></h1>
         <p class="tagline">Enterprise Platforms • Product Engineering • Technical Leadership</p>
-        <p class="intro">I build reliable customer-facing software and enterprise platforms, from Java/Liferay portals to React, TypeScript and .NET products. I like owning problems end-to-end: architecture, delivery, integration, release and production support.</p>
+        <p class="intro">I build reliable customer-facing products, enterprise platforms, and integrations. My work spans modern React, TypeScript and .NET product engineering as well as Java-based enterprise systems, with end-to-end ownership from requirements and architecture through release and production support.</p>
         <div class="actions">
           <a class="btn primary" href="#highlights">Career highlights</a>
           <a class="btn" href="https://www.linkedin.com/in/jonathan-zarate-37995b275/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
@@ -78,91 +80,125 @@
           <h2>Senior Software Engineer</h2>
           <p>Welland, Ontario · Canada</p>
           <div class="status"><span class="dot"></span> Enterprise & product engineering</div>
-          
         </div>
       </aside>
     </section>
 
     <section class="stats shell" aria-label="Career metrics">
-      <div class="stat"><strong>10+</strong><span>Years in software engineering</span></div>
-      <div class="stat"><strong>6+</strong><span>Years delivering Liferay solutions</span></div>
-      <div class="stat"><strong>$500M+</strong><span>Digital donation platform scale in 2025</span></div>
-      <div class="stat"><strong>30%</strong><span>REST API performance improvement</span></div>
+      <div class="stat"><strong>10+</strong><span>Years delivering production software</span></div>
+      <div class="stat"><strong>6+</strong><span>Years in enterprise client consulting</span></div>
+      <div class="stat"><strong>$529M</strong><span><a href="https://www.canadahelps.org/en/charity-life/sectornews/the-giving-report-canadian-philanthropy-2026/" target="_blank" rel="noreferrer">Digital donations processed through CanadaHelps in 2025 ↗</a></span></div>
+      <div class="stat"><strong>2×</strong><span>Originally planned scope delivered on a major onboarding initiative</span></div>
     </section>
 
     <section id="highlights" class="section shell">
-      <div class="section-head"><div><p class="section-label">Career highlights</p><h2>A career across product, portals and enterprise integration.</h2></div><p>Like the best engineering work, the story is less about a list of technologies and more about the problems solved, the systems improved and the teams supported.</p></div>
+      <div class="section-head"><div><p class="section-label">Career highlights</p><h2>Business problems, technical ownership, measurable outcomes.</h2></div><p>Each engagement is framed around the client or product problem, the part I owned, and what the work enabled — not around a framework name.</p></div>
       <div class="tabs" role="tablist">
         <button class="tab active" data-tab="canadahelps">CanadaHelps</button>
-        <button class="tab" data-tab="liferay">Liferay Consulting</button>
+        <button class="tab" data-tab="clients">Enterprise Clients</button>
         <button class="tab" data-tab="rbc">RBC</button>
-        <button class="tab" data-tab="nog">Network of Giving</button>
+        <button class="tab" data-tab="sheridan">Sheridan Partnership</button>
       </div>
 
       <article class="highlight active" id="canadahelps">
-        <div><p class="eyebrow">2021 — Present</p><h3>Senior Software Engineer</h3><p class="role-meta">CanadaHelps · React / TypeScript / .NET / Azure</p></div>
-        <div><p class="highlight-copy">Lead features end-to-end across solution design, frontend architecture, backend integrations, testing, deployment and production support. A major recent initiative was a multi-step charity onboarding platform spanning reusable UI workflows, third-party integrations, analytics, release validation and production rollout.</p><p class="impact">Outcome: delivered more than 2× the originally planned project scope, while also improving REST API performance by 30% on separate platform work.</p><div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">.NET / C#</span><span class="chip">REST APIs</span><span class="chip">SQL Server</span><span class="chip">Azure</span><span class="chip">CI/CD</span></div></div>
+        <div><p class="eyebrow">2021 — Present</p><h3>Senior Software Engineer</h3><p class="role-meta"><a class="ext" href="https://www.canadahelps.org/" target="_blank" rel="noreferrer">CanadaHelps ↗</a> · Product engineering</p></div>
+        <div>
+          <p class="highlight-copy"><strong>Business context:</strong> CanadaHelps operates a national digital-giving platform serving charities and donors. I work across customer-facing charity products, platform integrations, and cloud delivery.</p>
+          <p class="highlight-copy"><strong>Ownership:</strong> Lead features end to end across solution design, reusable frontend workflows, backend integrations, analytics, testing, release validation, deployment, and production support. A major initiative was a multi-step charity onboarding experience with third-party integration flows and evolving product requirements.</p>
+          <p class="impact">Outcome: delivered more than 2× the originally planned scope on the onboarding initiative. CanadaHelps reported <a class="ext" href="https://www.canadahelps.org/en/charity-life/sectornews/the-giving-report-canadian-philanthropy-2026/" target="_blank" rel="noreferrer">$529M in digital donations processed through its platform in 2025 ↗</a>.</p>
+          <div class="chips"><span class="chip">React</span><span class="chip">TypeScript</span><span class="chip">.NET / C#</span><span class="chip">REST APIs</span><span class="chip">SQL Server</span><span class="chip">Azure</span><span class="chip">CI/CD</span></div>
+        </div>
       </article>
 
-      <article class="highlight" id="liferay">
-        <div><p class="eyebrow">2015 — 2021</p><h3>Liferay Consultant / Software Engineer</h3><p class="role-meta">Veriday · Liferay Platinum Partner practice</p></div>
-        <div><p class="highlight-copy">Spent more than six years delivering enterprise portals and web applications across healthcare, retail, financial services and nonprofit organizations using Java and Liferay. Engagements included Canadian Tire, Lee Health, Orbis International, Investment Planning Counsel, Broadridge and FNF Canada.</p><p class="impact">Lee Health: consulted on a Liferay DXP solution while collaborating directly with members of the Liferay team through Veriday's Liferay Platinum Partner practice.</p><div class="chips"><span class="chip">Liferay DXP</span><span class="chip">Java</span><span class="chip">Spring MVC</span><span class="chip">OSGi</span><span class="chip">REST APIs</span><span class="chip">Gradle / Maven</span><span class="chip">Tomcat</span></div></div>
+      <article class="highlight" id="clients">
+        <div><p class="eyebrow">2015 — 2021</p><h3>Enterprise Client Portfolio</h3><p class="role-meta"><a class="ext" href="https://veriday.com/" target="_blank" rel="noreferrer">Veriday ↗</a> · Software Engineer / Enterprise Consultant</p></div>
+        <div>
+          <p class="highlight-copy"><strong>Business context:</strong> Delivered production web platforms across retail, healthcare, nonprofit, wealth management, financial technology, and mortgage services.</p>
+          <p class="highlight-copy"><strong>Ownership:</strong> Worked across technical design, UI engineering, REST services, integrations, modernization, testing, deployment, and production support. The focus varied by client: connecting dealer and supply-chain users, modernizing legacy applications, and delivering adviser/client-facing portal capabilities.</p>
+          <div class="case-grid">
+            <div class="case"><strong><a class="ext" href="https://corp.canadiantire.ca/" target="_blank" rel="noreferrer">Canadian Tire ↗</a></strong><span>Enterprise portal connecting business, dealers, supply chain, and customers.</span></div>
+            <div class="case"><strong><a class="ext" href="https://www.leehealth.org/" target="_blank" rel="noreferrer">Lee Health ↗</a></strong><span>Healthcare digital-platform engagement; collaborated directly with members of the Liferay team.</span></div>
+            <div class="case"><strong><a class="ext" href="https://www.orbis.org/en" target="_blank" rel="noreferrer">Orbis International ↗</a></strong><span>Modernized existing web applications toward an OSGi-based architecture.</span></div>
+            <div class="case"><strong><a class="ext" href="https://www.ipcc.ca/" target="_blank" rel="noreferrer">Investment Planning Counsel ↗</a></strong><span>Portal capabilities for business, financial advisers, and clients.</span></div>
+            <div class="case"><strong><a class="ext" href="https://www.broadridge.com/" target="_blank" rel="noreferrer">Broadridge ↗</a></strong><span>Client-facing enterprise portal work in financial services.</span></div>
+            <div class="case"><strong><a class="ext" href="https://www.fnf.ca/" target="_blank" rel="noreferrer">FNF Canada ↗</a></strong><span>Business/client portal work for mortgage and loan-related services.</span></div>
+          </div>
+          <p class="impact">Outcome: delivered and modernized production platform work across six named enterprise clients, spanning multiple industries and user groups rather than a single technology niche.</p>
+          <div class="chips"><span class="chip">Java</span><span class="chip">REST APIs</span><span class="chip">Angular</span><span class="chip">Vue.js</span><span class="chip">Enterprise CMS</span><span class="chip">Liferay DXP</span><span class="chip">OSGi</span><span class="chip">Tomcat</span><span class="chip">Jenkins</span></div>
+        </div>
       </article>
 
       <article class="highlight" id="rbc">
-        <div><p class="eyebrow">Enterprise Integration</p><h3>Royal Bank of Canada</h3><p class="role-meta">Veriday engagement</p></div>
-        <div><p class="highlight-copy">Worked as part of an enterprise integration team supporting development of a mobile banking and investment application. The work broadened my experience beyond portal development into message-oriented enterprise integration and large financial-services systems.</p><div class="chips"><span class="chip">Java</span><span class="chip">IBM WebSphere</span><span class="chip">WebSphere Message Broker</span><span class="chip">ESQL</span><span class="chip">RFHUtil</span></div></div>
+        <div><p class="eyebrow">Enterprise Integration</p><h3>Mobile Banking & Investments</h3><p class="role-meta"><a class="ext" href="https://www.rbcroyalbank.com/" target="_blank" rel="noreferrer">Royal Bank of Canada ↗</a> · Client engagement through Veriday</p></div>
+        <div>
+          <p class="highlight-copy"><strong>Business context:</strong> Supported an enterprise integration team working on a mobile banking and investment application.</p>
+          <p class="highlight-copy"><strong>Ownership:</strong> Worked in the middleware/integration layer using IBM WebSphere Application Server, WebSphere Message Broker, Java, ESQL, RFHUtil, and SVN.</p>
+          <p class="impact">Outcome: helped the integration team deliver the enterprise middleware work required behind the mobile banking and investment experience.</p>
+          <div class="chips"><span class="chip">Java</span><span class="chip">IBM WebSphere</span><span class="chip">Message Broker</span><span class="chip">ESQL</span><span class="chip">RFHUtil</span><span class="chip">Enterprise Integration</span></div>
+        </div>
       </article>
 
-      <article class="highlight" id="nog">
-        <div><p class="eyebrow">Product Engineering</p><h3>Network of Giving</h3><p class="role-meta">Non-Liferay Java / Angular application</p></div>
-        <div><p class="highlight-copy">Contributed to an application designed to connect financial institutions, merchants, consumers and charitable organizations. The project expanded my frontend and Java experience and introduced me to micro-frontend architecture concepts.</p><div class="chips"><span class="chip">Java</span><span class="chip">AngularJS</span><span class="chip">JHipster</span><span class="chip">Tomcat</span><span class="chip">Node.js</span><span class="chip">Micro Frontends</span></div></div>
+      <article class="highlight" id="sheridan">
+        <div><p class="eyebrow">2019 — 2020</p><h3>Industry Partner / Capstone Client & Mentor</h3><p class="role-meta"><a class="ext" href="https://www.sheridancollege.ca/" target="_blank" rel="noreferrer">Sheridan College ↗</a> · Alumni industry partnership</p></div>
+        <div>
+          <p class="highlight-copy"><strong>Business context:</strong> Returned to Sheridan as an alumni industry client for a capstone team building a React Native mobile app for crowdsourced local deals. Users could report offers they found and other users could discover deals shared by the community.</p>
+          <p class="highlight-copy"><strong>Ownership:</strong> Defined product requirements and Jira work, collaborated on system architecture, wireframes, use cases, Scrum planning, and implementation, and provided technical mentorship, code reviews, and React Native guidance.</p>
+          <p class="impact">Outcome: guided the student team through an industry-style delivery process from system vision and requirements through architecture and implementation planning. Earlier, my own Sheridan capstone placed 1st with <a class="ext" href="https://peelregion.ca/" target="_blank" rel="noreferrer">Peel Region ↗</a> as the industry client.</p>
+          <div class="chips"><span class="chip">React Native</span><span class="chip">Jira</span><span class="chip">Requirements</span><span class="chip">System Architecture</span><span class="chip">Scrum</span><span class="chip">Code Review</span><span class="chip">Mentorship</span></div>
+        </div>
       </article>
     </section>
 
     <section id="principles" class="section shell">
-      <div class="section-head"><div><p class="section-label">How I work</p><h2>Technical depth is useful. Team leverage is better.</h2></div><p>I’ve increasingly gravitated toward the space between senior individual contribution and technical leadership: architecture, delivery, mentoring and improving how teams work.</p></div>
+      <div class="section-head"><div><p class="section-label">How I work</p><h2>Engineering judgment beyond the ticket.</h2></div><p>I’m most effective where technical delivery, product context, and team enablement overlap.</p></div>
       <div class="principles">
-        <article class="principle"><span>01</span><h3>Systems Thinking</h3><p>I look at product requirements, architecture, integrations, release processes and team workflow as one system rather than isolated tickets.</p></article>
-        <article class="principle"><span>02</span><h3>End-to-End Ownership</h3><p>I prefer staying with a problem from discovery and technical design through implementation, QA, release validation and production support.</p></article>
-        <article class="principle"><span>03</span><h3>Team Enablement</h3><p>Code review, mentoring, design discussions, documentation and process improvements are part of engineering work when they help the whole team deliver better.</p></article>
-      </div>
-    </section>
-
-    <section id="credentials" class="section shell">
-      <div class="section-head"><div><p class="section-label">Credentials</p><h2>Enterprise experience backed by platform specialization.</h2></div></div>
-      <div class="credentials">
-        <article class="credential-main"><div class="cert-mark">DXP</div><p class="eyebrow">Certification</p><h3>Liferay DXP Certified Professional Developer</h3><p>More than six years of hands-on Liferay delivery across enterprise portal development, modernization, APIs, OSGi and Java-based applications.</p></article>
-        <article class="credential-side"><p class="eyebrow">Education</p><h3>Computer Systems Analyst, Advanced Diploma</h3><p>Sheridan College · 2011 — 2014</p><p>Career experience also includes enterprise architecture work at Canadian Tire and service in the Canadian Armed Forces.</p></article>
+        <article class="principle"><span>01</span><h3>Own the problem end to end</h3><p>I follow work from requirements and architecture through implementation, integration, testing, release, and production support instead of optimizing only one layer.</p></article>
+        <article class="principle"><span>02</span><h3>Turn ambiguity into executable work</h3><p>I break evolving requirements into technical decisions, estimates, Jira work, risk areas, and release steps that a team can actually deliver.</p></article>
+        <article class="principle"><span>03</span><h3>Make the team stronger</h3><p>Code reviews, design sessions, troubleshooting, documentation, and mentorship are part of delivery — from professional engineering teams to student capstone teams.</p></article>
       </div>
     </section>
 
     <section id="technology" class="section shell">
-      <div class="section-head"><div><p class="section-label">Technology</p><h2>Built across multiple generations of enterprise web stacks.</h2></div></div>
+      <div class="section-head"><div><p class="section-label">Technology</p><h2>Modern product engineering with enterprise depth.</h2></div><p>The tools change by problem. The through-line is building maintainable systems, reliable integrations, and repeatable delivery.</p></div>
       <div class="skill-grid">
-        <div class="skill"><h3>Frontend</h3><div class="skill-list"><span>React</span><span>TypeScript</span><span>JavaScript</span><span>Angular</span><span>Vue.js</span></div></div>
-        <div class="skill"><h3>Backend & APIs</h3><div class="skill-list"><span>.NET / C#</span><span>Java</span><span>REST APIs</span><span>OAuth 2.0</span><span>SQL Server</span><span>MySQL</span></div></div>
-        <div class="skill"><h3>Enterprise Platforms</h3><div class="skill-list"><span>Liferay DXP</span><span>OSGi</span><span>Spring MVC</span><span>IBM WebSphere</span><span>Tomcat</span></div></div>
-        <div class="skill"><h3>Cloud & Delivery</h3><div class="skill-list"><span>Azure</span><span>GitHub Actions</span><span>Azure DevOps</span><span>Jenkins</span><span>Docker</span><span>CI/CD</span><span>Git</span></div></div>
+        <div class="skill"><h3>Product & Frontend</h3><div class="skill-list"><span>React</span><span>React Native</span><span>TypeScript</span><span>JavaScript</span><span>Angular</span><span>Vue.js</span><span>HTML / CSS</span></div></div>
+        <div class="skill"><h3>Backend & Integration</h3><div class="skill-list"><span>.NET / C#</span><span>Java</span><span>REST APIs</span><span>OAuth 2.0</span><span>SQL Server</span><span>MySQL</span><span>IBM WebSphere</span></div></div>
+        <div class="skill"><h3>Enterprise Platforms</h3><div class="skill-list"><span>Liferay DXP</span><span>OSGi</span><span>Spring MVC</span><span>Tomcat</span><span>Enterprise CMS</span><span>Portal Architecture</span></div></div>
+        <div class="skill"><h3>Cloud & Delivery</h3><div class="skill-list"><span>Azure</span><span>GitHub Actions</span><span>Azure DevOps</span><span>Jenkins</span><span>Docker</span><span>CI/CD</span><span>Git</span><span>Gradle / Maven</span></div></div>
+      </div>
+    </section>
+
+    <section id="credentials" class="section shell">
+      <div class="section-head"><div><p class="section-label">Credentials</p><h2>Formal foundation, proven in production.</h2></div><p>Credentials support the story; client delivery and production ownership are the stronger evidence.</p></div>
+      <div class="credentials">
+        <article class="credential-main"><div class="cert-mark">DXP</div><h3>Liferay DXP Certified Professional Developer</h3><p>A specialized enterprise-platform credential that complements broader product, integration, and cloud-delivery experience.</p></article>
+        <article class="credential-side"><div class="cert-mark">SC</div><h3><a class="ext" href="https://www.sheridancollege.ca/" target="_blank" rel="noreferrer">Sheridan College ↗</a></h3><p>Computer Systems Analyst, Advanced Diploma · 2011–2014. 1st Place capstone project with <a class="ext" href="https://peelregion.ca/" target="_blank" rel="noreferrer">Peel Region ↗</a> as the industry client.</p></article>
       </div>
     </section>
 
     <section id="connect" class="connect shell">
-      <p class="section-label">Let’s connect</p>
+      <p class="section-label">Connect</p>
       <h2>Let’s build reliable systems and stronger engineering teams.</h2>
-      <p>I’m interested in conversations around senior software engineering, enterprise platforms, product engineering, Liferay modernization and technical leadership.</p>
-      <div class="actions"><a class="btn primary" href="mailto:jvmz.dev@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/jonathan-zarate-37995b275/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a class="btn" href="https://github.com/jvmzdev" target="_blank" rel="noreferrer">GitHub ↗</a><a class="btn" href="./Jonathan_Zarate_Resume.pdf">Resume ↗</a></div>
+      <p>I’m always interested in conversations around enterprise platforms, product engineering, integrations, modernization, and technical leadership.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:jvmz.dev@gmail.com">jvmz.dev@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/jonathan-zarate-37995b275/" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        <a class="btn" href="https://github.com/jvmzdev" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a class="btn" href="./Jonathan_Zarate_Resume.pdf">Resume ↗</a>
+      </div>
     </section>
   </main>
 
   <footer class="footer shell"><span>© 2026 Jonathan Zarate</span><span>Senior Software Engineer · Ontario, Canada</span></footer>
 
   <script>
-    const tabs=[...document.querySelectorAll('.tab')];
-    const panels=[...document.querySelectorAll('.highlight')];
-    tabs.forEach(tab=>tab.addEventListener('click',()=>{
-      tabs.forEach(t=>t.classList.remove('active')); panels.forEach(p=>p.classList.remove('active'));
-      tab.classList.add('active'); document.getElementById(tab.dataset.tab).classList.add('active');
+    const tabs = document.querySelectorAll('.tab');
+    const panels = document.querySelectorAll('.highlight');
+    tabs.forEach(tab => tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById(tab.dataset.tab).classList.add('active');
     }));
   </script>
 </body>
